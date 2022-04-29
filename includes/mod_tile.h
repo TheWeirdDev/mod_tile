@@ -17,7 +17,7 @@
 
 #define INILINE_MAX 256
 
-#define MAX_ZOOM_SERVER 30
+#define MAX_ZOOM_SERVER 40
 
 #define FRESH 1
 #define OLD 2

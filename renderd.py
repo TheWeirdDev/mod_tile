@@ -39,7 +39,7 @@ from StringIO import StringIO
 import cairo
 import cStringIO
 
-MAX_ZOOM = 18
+MAX_ZOOM = 24
 METATILE = 8
 META_MAGIC = "META"
 
