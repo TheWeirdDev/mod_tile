@@ -23,6 +23,7 @@ static pthread_cond_t qCondNotFull;
 
 static int maxLoad = 0;
 
+int work_complete;
 static unsigned int qLen;
 struct qItem {
     char *mapname;

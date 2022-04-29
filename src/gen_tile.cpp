@@ -321,7 +321,6 @@ static enum protoCmd render(Map &m, const char *tile_dir, char *xmlname, project
 }
 #endif //METATILE
 
-
 void render_init(const char *plugins_dir, const char* font_dir, int font_dir_recurse)
 {
   syslog(LOG_INFO, "Renderd is using mapnik version %i.%i.%i", ((MAPNIK_VERSION) / 100000), (((MAPNIK_VERSION) / 100) % 1000), ((MAPNIK_VERSION) % 100));
@@ -398,6 +397,7 @@ void *render_thread(void * arg)
 
     while (1) {
         enum protoCmd ret;
+        extern struct request_queue * render_request_queue;
         struct item *item = request_queue_fetch_request(render_request_queue);
         render_time = -1;
         if (item) {

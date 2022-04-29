@@ -10,9 +10,9 @@ extern "C" {
 #endif
 
 #include <limits.h> /* for PATH_MAX */
-#include "gen_tile.h"
+//#include "gen_tile.h"
 #include "protocol.h"
-
+struct item;
 #define INILINE_MAX 256
 #define MAX_SLAVES 5
 
@@ -44,8 +44,6 @@ typedef struct {
 } xmlconfigitem;
 
 
-
-struct request_queue * render_request_queue;
 
 void statsRenderFinish(int z, long time);
 void request_exit(void);
