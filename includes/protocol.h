@@ -36,16 +36,16 @@ struct protocol {
 struct protocol_v1 {
     int ver;
     enum protoCmd cmd;
-    long x;
-    long y;
+    int x;
+    int y;
     int z;
 }; 
 
 struct protocol_v2 { 
     int ver; 
     enum protoCmd cmd; 
-    long x; 
-    long y; 
+    int x; 
+    int y; 
     int z; 
     char xmlname[XMLCONFIG_MAX]; 
 };
