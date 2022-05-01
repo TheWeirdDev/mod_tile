@@ -25,8 +25,8 @@ enum protoCmd { cmdIgnore, cmdRender, cmdDirty, cmdDone, cmdNotDone, cmdRenderPr
 struct protocol {
     int ver;
     enum protoCmd cmd;
-    long x;
-    long y;
+    int x;
+    int y;
     int z;
     char xmlname[XMLCONFIG_MAX];
     char mimetype[XMLCONFIG_MAX]; 
